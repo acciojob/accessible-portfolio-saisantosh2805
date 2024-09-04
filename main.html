@@ -4,10 +4,107 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+<style>
+	body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background: #fff;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 role="heading">My Accessible Portfolio</h1>
+    </header>
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <img role="img" src="path-to-your-image.jpg" alt="Description of image">
+            <p>This is a brief description about me and my work. I am a web developer with a focus on creating accessible web applications.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1: Accessible Web Design</li>
+                <li role="listitem">Project 2: Responsive Layouts</li>
+                <li role="listitem">Project 3: JavaScript Interactivity</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Contact me at: <a href="mailto:email@example.com">email@example.com</a></p>
+    </footer>
+</body>
+</html>	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
 
